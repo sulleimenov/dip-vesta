@@ -1,0 +1,36 @@
+.container
+	width: 100%
+	padding-left: 15px
+	padding-right: 15px
+	margin: 0 auto
+	max-width: 1320px
+	@include media-breakpoint-down(xxl)
+		max-width: 1140px
+	@include media-breakpoint-down(xl)
+		max-width: 960px
+	@include media-breakpoint-down(lg)
+		max-width: 720px
+	@include media-breakpoint-down(md)
+		max-width: 540px
+	@include media-breakpoint-down(sm)
+
+button
+	padding: 17px 20px
+	border-radius: 10px
+	border: none
+	background-color: $accent
+	font-size: 13px
+	font-weight: 500
+
+.btn
+	padding-left: 68px
+	background-repeat: no-repeat
+	background-position: 20px center
+	&::after
+		position: absolute
+		content: attr(title)
+		bottom: -50px
+		left: 50px
+
+.btn--calc
+	background-image: url(../images/icons/calc.svg)
