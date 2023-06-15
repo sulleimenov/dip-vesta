@@ -1,0 +1,39 @@
+.price
+	&__subtitle
+		color: $green
+		text-align: center
+.table
+	display: flex
+	flex-direction: column
+	align-items: center
+	max-width: 950px
+	margin: 0 auto
+	&__head
+		display: flex
+		justify-content: center
+		gap: 45px
+		background-color: #fdd290
+		width: 100%
+		border-top-left-radius: 10px
+		border-top-right-radius: 10px
+		span
+			background-color: #fdd290
+			font-weight: 700
+			flex: 0 0 200px
+			text-align: center
+			padding: 7px 0
+	&__row
+		display: flex
+		justify-content: center
+		gap: 45px
+		padding: 7px 0
+		width: 100%
+
+		&:nth-child(odd)
+			background-color: #e5e5e5
+		&:last-child
+			border-bottom-left-radius: 10px
+			border-bottom-right-radius: 10px
+		span
+			flex: 0 0 200px
+			text-align: center

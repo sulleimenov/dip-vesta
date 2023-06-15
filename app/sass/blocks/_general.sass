@@ -23,14 +23,64 @@ button
 	font-weight: 500
 
 .btn
-	padding-left: 68px
 	background-repeat: no-repeat
 	background-position: 20px center
+	position: relative
 	&::after
 		position: absolute
 		content: attr(title)
-		bottom: -50px
+		bottom: -60px
 		left: 50px
+		color: #fff
+		width: 190px
+		text-align: left
+		font-weight: 300
+		line-height: 18px
+	&::before
+		content: ''
+		background-image: url(../images/icons/header-line.svg)
+		width: 33px
+		height: 33px
+		background-repeat: no-repeat
+		background-position: center
+		position: absolute
+		right: 25px
+		top: 65px
 
 .btn--calc
+	padding-left: 68px
 	background-image: url(../images/icons/calc.svg)
+
+.btn--phone
+	padding-left: 68px
+	background-image: url(../images/icons/phone.svg)
+
+.title
+	font-size: 32px
+	text-align: center
+	font-weight: 700
+	position: relative
+	padding-top: 34px
+	padding-bottom: 60px
+	margin-top: 80px
+	&::before
+		content: ''
+		background-image: url(../images/icons/header-icon.svg)
+		background-repeat: no-repeat
+		width: 94px
+		height: 34px
+		position: absolute
+		left: 0
+		right: 0
+		margin: 0 auto
+		top: 0
+	&::after
+		content: attr(title)
+		position: absolute
+		bottom: 30px
+		left: 0
+		right: 0
+		margin: 0 auto
+		font-size: 16px
+		color: $green
+		font-weight: 400
