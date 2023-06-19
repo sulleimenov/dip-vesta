@@ -4,6 +4,9 @@
 	padding-top: 55px
 	position: relative
 	color: #fff
+	&.page
+		height: 60vh
+		margin-bottom: 50px
 	&::after
 		content: ''
 		position: absolute
@@ -18,6 +21,7 @@
 	&__top
 		display: flex
 		justify-content: space-between
+		position: relative
 	&__center
 		display: flex
 		gap: 70px
@@ -48,6 +52,9 @@
 		justify-content: center
 		align-items: flex-start
 		height: calc( 100vh - 240px )
+		&.page
+			height: calc( 70vh - 240px )
+			align-items: center
 	&__title
 		font-weight: 700
 		width: 50%
@@ -77,6 +84,29 @@
 		background-position: 20px center
 		background-repeat: no-repeat
 
-.logo
+.page-title
+	font-weight: 700
+
+// .logo
 
 .menu-burger
+	cursor: pointer
+
+.menu
+	display: flex
+	flex-direction: column
+	position: absolute
+	right: 0
+	top: 50px
+	padding: 20px 20px
+	background-color: #fff
+	border-radius: 10px
+	&:not(.show)
+		display: none
+	&__item
+		padding: 5px 0
+		text-decoration: none
+		color: $dark
+		transition: all 0.2s
+		&:hover
+			color: $accent

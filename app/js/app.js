@@ -21,4 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
 			prevEl: '.swiper-button-prev',
 		},
 	});
+
+	function menu() {
+		const menu_burger = document.querySelector('.menu-burger');
+		const menu_content = document.querySelector('.menu');
+
+		menu_burger.addEventListener('click', function () {
+			menu_content.classList.toggle('show');
+		});
+	}
+
+	menu();
 });

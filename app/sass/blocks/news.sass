@@ -1,0 +1,48 @@
+.news
+	&__list
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		gap: 30px
+	&__list-item
+		border-radius: 10px
+		overflow: hidden
+		position: relative
+		&:hover
+			.news__list-image
+				transform: scale(1.1)
+	&__list-image
+		transition: all .2s ease
+		height: 300px
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(#000, 0.5)
+		img
+			object-fit: cover
+			height: 100%
+	&__list-title
+		font-weight: 700
+		position: absolute
+		bottom: 20px
+		left: 30px
+		z-index: 5
+		color: #fff
+	&__list-published
+		position: absolute
+		top: 20px
+		left: 30px
+		z-index: 5
+		color: #fff
+		font-size: 12px
+	&__list-link
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		
